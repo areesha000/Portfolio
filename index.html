@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="p style.css">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<!-- Bootstrap CSS -->
+<link href="bootstrap.min.css" rel="stylesheet">
+
+<!-- Font Awesome for Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+ <!-- Bootstrap CSS -->
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+ <!-- AOS Animation -->
+ <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+ <!-- Font Awesome -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+     <!-- Bootstrap CSS -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+     <!-- AOS Animation CSS -->
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+
+
+
+</head>
+<body>
+    
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+      <a class="navbar-brand text-warning" href="#">Areesha Nazar</a>
+      <button class="navbar-toggler bg-warning" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon text-dark"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#blogs">Blogs</a></li>
+          <li class="nav-item"><a class="nav-link" href="#Clients Reviews">Clients Reviews</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+ 
+
+     
+      <style>
+          :root {
+              --gold: #FFD700;
+              --black: #000000;
+              --dark-gray: #111111;
+          }
+          
+          body {
+              background-color: var(--black);
+              color: #fff;
+              font-family: 'Poppins', sans-serif;
+              overflow-x: hidden;
+          }
+          
+          .hero-section {
+              min-height: 100vh;
+              padding: 100px 0;
+              position: relative;
+              overflow: hidden;
+          }
+          
+          .hero-content {
+              position: relative;
+              z-index: 2;
+          }
+          
+          .hero-title {
+              font-size: 3.5rem;
+              font-weight: 700;
+              margin-bottom: 20px;
+              color: var(--gold);
+          }
+          
+          .hero-title span {
+              position: relative;
+              display: inline-block;
+          }
+          
+          .hero-title span::after {
+              content: '';
+              
+              left: 0;
+              width: 100%;
+              height: 10px;
+              background-color: rgba(255, 215, 0, 0.3);
+              z-index: -1;
+              transition: all 0.3s ease;
+          }
+          
+          .hero-title:hover span::after {
+              height: 15px;
+              background-color: rgba(255, 215, 0, 0.5);
+          }
+          
+          .hero-subtitle {
+              font-size: 1.5rem;
+              margin-bottom: 30px;
+              opacity: 0.9;
+          }
+          
+          .hero-img-container {
+              position: relative;
+              border-radius: 20px;
+              overflow: hidden;
+              box-shadow: 0 20px 50px rgba(255, 215, 0, 0.1);
+              border: 3px solid transparent;
+              transition: all 0.5s ease;
+              border-color: var(--gold);
+              box-shadow: 0 20px 50px rgba(255, 215, 0, 0.3);
+              transform: scale(1.07);
+              margin-top: 20px;
+          }
+          
+          .hero-img {
+              width: 100%;
+              height: auto;
+              transition: transform 0.5s ease;
+              margin-top: 20px;
+          }
+          
+        
+          
+        
+          .btn-gold {
+              background-color: var(--gold);
+              color: var(--black);
+              font-weight: 600;
+              padding: 12px 30px;
+              border-radius: 30px;
+              transition: all 0.3s ease;
+              border: 2px solid var(--gold);
+          }
+          
+          .btn-gold:hover {
+              background-color: transparent;
+              color: var(--gold);
+              transform: translateY(-3px);
+              box-shadow: 0 10px 20px rgba(255, 215, 0, 0.2);
+          }
+          
+          .social-icons {
+              margin-top: 30px;
+          }
+          
+          .social-icon {
+              display: inline-flex;
+              align-items: center;
+              justify-content: center;
+              width: 40px;
+              height: 40px;
+              background-color: rgba(255, 215, 0, 0.1);
+              color: var(--gold);
+              border-radius: 50%;
+              margin-right: 15px;
+              transition: all 0.3s ease;
+          }
+          
+          .social-icon:hover {
+              background-color: var(--gold);
+              color: var(--black);
+              transform: translateY(-5px);
+          }
+      </style>
+
+  <body>
+      <!-- Home/Hero Section -->
+      <section class="hero-section d-flex align-items-center">
+          <div class="container">
+              <div class="row align-items-center">
+                  <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
+                      <div class="hero-content">
+                          <h1 class="hero-title">
+                              <span>Hi, I'm <span style="color: var(--gold);">Areesha Nazar</span></span>
+                          </h1>
+                          <h2 class="hero-subtitle">Professional Web Developer</h2>
+                          <p class="mb-4">I create beautiful, functional websites and web applications that help businesses grow and stand out in the digital world.</p>
+                          <a href="#about" class="btn btn-gold me-3">Explore My Work</a>
+                      
+                          <div class="social-icons">
+                              <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                              <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                              <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                              <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
+                      <div class="hero-img-container">
+                          <img src="https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Web Developer" class="hero-img">
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+  
+      <!-- Bootstrap JS -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+      <!-- AOS Animation JS -->
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+          AOS.init({
+              duration: 800,
+              easing: 'ease-in-out',
+              once: true
+          });
+      </script>
+  </body>
+  </html>
+  
+
+
+  <!-- About Section -->
+<section id="about" class="about-section py-5" style="background-color: #0a0a0a;">
+  <div class="container py-5">
+      <div class="row">
+          <div class="col-lg-12 text-center mb-5" data-aos="fade-down">
+              <h2 class="section-title" style="color: #FFD700;">About <span style="color: #fff;">Me</span></h2>
+              <div class="title-line" style="height: 3px; width: 80px; background: #FFD700; margin: 15px auto;"></div>
+          </div>
+      </div>
+      
+      <div class="row align-items-center">
+          <div class="col-lg-6" data-aos="fade-right">
+              <div class="about-img-container position-relative">
+                  <img  src="https://images.unsplash.com/photo-1580927752452-89d86da3fa0a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" 
+                       alt="About Me" 
+                       class="img-fluid rounded-4 shadow-lg"
+                       style="border: 3px solid #FFD700; margin-bottom:20px;">
+                  <div class="img-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.7)); border-radius: 16px;"></div>
+                  <div class="img-text" style="position: absolute; bottom: 30px; left: 30px; color: #fff;">
+                      <h4 style="color: #FFD700;">2+ Years Experience</h4>
+                      <p>In Web Development</p>
+                  </div>
+              </div>
+          </div>
+          
+          <div class="col-lg-6" data-aos="fade-left">
+              <h3 style="color: #FFD700;" class="mb-4">Web Developer & Digital Creator</h3>
+              <p class="mb-4">I specialize in creating modern, responsive websites and web applications that deliver exceptional user experiences. With a strong foundation in both front-end and back-end technologies, I bring ideas to life through clean, efficient code.</p>
+              
+              <div class="row mb-4">
+                  <div class="col-md-6">
+                      <ul class="list-unstyled">
+                          <li class="mb-2"><i class="fas fa-angle-right me-2" style="color: #FFD700;"></i> <strong>Name :</strong> Areesha Nazar</li>
+                          <li class="mb-2"><i class="fas fa-angle-right me-2" style="color: #FFD700;"></i> <strong>Email:</strong> areeshy1212@gmail.com</li>
+                          <li class="mb-2"><i class="fas fa-angle-right me-2" style="color: #FFD700;"></i> <strong>Phone:</strong> +92 3017309193</li>
+                      </ul>
+                  </div>
+                  <div class="col-md-6">
+                      <ul class="list-unstyled">
+                          <li class="mb-2"><i class="fas fa-angle-right me-2" style="color: #FFD700;"></i> <strong>From:</strong> Okara pakistan </li>
+                          <li class="mb-2"><i class="fas fa-angle-right me-2" style="color: #FFD700;"></i> <strong>Freelance:</strong> Available</li>
+                          <li class="mb-2"><i class="fas fa-angle-right me-2" style="color: #FFD700;"></i> <strong>Experience:</strong> 2+ Years</li>
+                      </ul>
+                  </div>
+              </div>
+              
+              
+                 
+              </div>
+              
+
+          </div>
+      </div>
+  </div>
+</section>
+  
+
+ <!-- Skills Section -->
+<section id="skills" class="section" style="background-color: #000; color: #dbc859;">
+    <div class="container">
+      <div class="text-center mb-5" data-aos="zoom-in">
+        <h1 class="fw-bold skills-heading-hover">My Skills</h1>
+        <p class="text-light">Technologies I work with and love mastering:</p>
+      </div>
+  
+      <div class="row g-4">
+        <!-- Skill Item 1 -->
+        <div class="col-md-6" data-aos="fade-up">
+          <div class="d-flex align-items-center">
+            <div class="icon-circle me-3">
+              <i class="bi bi-code-slash"></i>
+            </div>
+            <div>
+              <h5>HTML / CSS / Bootstrap</h5>
+              <div class="progress bg-dark" style="height: 10px;">
+                <div class="progress-bar bg-warning text-dark progress-hover" role="progressbar" style="width: 95%;">95%</div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Skill Item 2 -->
+        <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="d-flex align-items-center">
+            <div class="icon-circle me-3">
+              <i class="bi bi-braces-asterisk"></i>
+            </div>
+            <div>
+              <h5>JavaScript / React</h5>
+              <div class="progress bg-dark" style="height: 10px;">
+                <div class="progress-bar bg-warning text-dark progress-hover" role="progressbar" style="width: 90%;">90%</div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Skill Item 3 -->
+        <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="d-flex align-items-center">
+            <div class="icon-circle me-3">
+              <i class="bi bi-phone"></i>
+            </div>
+            <div>
+              <h5>Responsive Design</h5>
+              <div class="progress bg-dark" style="height: 10px;">
+                <div class="progress-bar bg-warning text-dark progress-hover" role="progressbar" style="width: 92%;">92%</div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Skill Item 4 -->
+        <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+          <div class="d-flex align-items-center">
+            <div class="icon-circle me-3">
+              <i class="bi bi-stars"></i>
+            </div>
+            <div>
+              <h5>Animation Libraries</h5>
+              <div class="progress bg-dark" style="height: 10px;">
+                <div class="progress-bar bg-warning text-dark progress-hover" role="progressbar" style="width: 85%;">85%</div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Skill Item 5 -->
+        <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
+          <div class="d-flex align-items-center">
+            <div class="icon-circle me-3">
+              <i class="bi bi-bezier2"></i>
+            </div>
+            <div>
+              <h5>GSAP / AOS / ScrollReveal</h5>
+              <div class="progress bg-dark" style="height: 10px;">
+                <div class="progress-bar bg-warning text-dark progress-hover" role="progressbar" style="width: 80%;">80%</div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Skill Item 6 -->
+        <div class="col-md-6" data-aos="fade-up" data-aos-delay="500">
+          <div class="d-flex align-items-center">
+            <div class="icon-circle me-3">
+              <i class="bi bi-terminal"></i>
+            </div>
+            <div>
+              <h5>Git / GitHub</h5>
+              <div class="progress bg-dark" style="height: 10px;">
+                <div class="progress-bar bg-warning text-dark progress-hover" role="progressbar" style="width: 88%;">88%</div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Skill Item 7 -->
+        <div class="col-md-6" data-aos="fade-up" data-aos-delay="600">
+          <div class="d-flex align-items-center">
+            <div class="icon-circle me-3">
+              <i class="bi bi-palette2"></i>
+            </div>
+            <div>
+              <h5>UI/UX Design</h5>
+              <div class="progress bg-dark" style="height: 10px;">
+                <div class="progress-bar bg-warning text-dark progress-hover" role="progressbar" style="width: 87%;">87%</div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Skill Item 8 -->
+        <div class="col-md-6" data-aos="fade-up" data-aos-delay="700">
+          <div class="d-flex align-items-center">
+            <div class="icon-circle me-3">
+              <i class="bi bi-speedometer2"></i>
+            </div>
+            <div>
+              <h5>Performance Optimization</h5>
+              <div class="progress bg-dark" style="height: 10px;">
+                <div class="progress-bar bg-warning text-dark progress-hover" role="progressbar" style="width: 82%;">82%</div>
+              </div>
+            </div>
+          </div>
+        </div>  
+        
+      </div>
+    </div>
+  </section>
+  
+
+
+  <!-- Services Section with Icons -->
+<section id="services" class="py-5" style="background-color: #0a0a0a;">
+  <div class="container py-5">
+    <div class="row justify-content-center">
+      <div class="col-lg-8 text-center mb-5" data-aos="fade-down">
+        <h2 class="display-4 fw-bold mb-3" style="color: #FFD700;">My <span class="text-white">Services</span></h2>
+        <div class="title-divider" style="height: 4px; width: 80px; background: #FFD700; margin: 0 auto 20px;"></div>
+        <p class="lead text-light opacity-75">Professional web solutions to grow your business</p>
+      </div>
+    </div>
+
+    <div class="row g-4">
+      <!-- Service 1 -->
+      <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="100">
+        <div class="service-card h-100 p-4 text-center position-relative">
+          <div class="icon-wrapper mb-4" style="width: 80px; height: 80px; margin: 0 auto; background: rgba(255, 215, 0, 0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; transition: all 0.3s ease;">
+            <i class="fas fa-code fa-2x" style="color: #FFD700;"></i>
+          </div>
+          <h3 style="color: #FFD700;">Web Development</h3>
+          <p class="text-light mb-0">Custom websites built with modern technologies for optimal performance.</p>
+          <div class="service-hover-content" style="position: absolute; bottom: -20px; left: 0; right: 0; opacity: 0; transition: all 0.3s ease;">
+            <a href="#" class="btn btn-sm mt-3" style="background-color: #FFD700; color: #000;">Learn More</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Service 2 -->
+      <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="150">
+        <div class="service-card h-100 p-4 text-center position-relative">
+          <div class="icon-wrapper mb-4" style="width: 80px; height: 80px; margin: 0 auto; background: rgba(255, 215, 0, 0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; transition: all 0.3s ease;">
+            <i class="fas fa-mobile-alt fa-2x" style="color: #FFD700;"></i>
+          </div>
+          <h3 style="color: #FFD700;">Responsive Design</h3>
+          <p class="text-light mb-0">Mobile-friendly websites that work perfectly on all devices.</p>
+          <div class="service-hover-content" style="position: absolute; bottom: -20px; left: 0; right: 0; opacity: 0; transition: all 0.3s ease;">
+            <a href="#" class="btn btn-sm mt-3" style="background-color: #FFD700; color: #000;">Learn More</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Service 3 -->
+      <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="200">
+        <div class="service-card h-100 p-4 text-center position-relative">
+          <div class="icon-wrapper mb-4" style="width: 80px; height: 80px; margin: 0 auto; background: rgba(255, 215, 0, 0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; transition: all 0.3s ease;">
+            <i class="fas fa-shopping-cart fa-2x" style="color: #FFD700;"></i>
+          </div>
+          <h3 style="color: #FFD700;">E-Commerce</h3>
+          <p class="text-light mb-0">Online stores with secure payments and inventory management.</p>
+          <div class="service-hover-content" style="position: absolute; bottom: -20px; left: 0; right: 0; opacity: 0; transition: all 0.3s ease;">
+            <a href="#" class="btn btn-sm mt-3" style="background-color: #FFD700; color: #000;">Learn More</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Service 4 -->
+      <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="250">
+        <div class="service-card h-100 p-4 text-center position-relative">
+          <div class="icon-wrapper mb-4" style="width: 80px; height: 80px; margin: 0 auto; background: rgba(255, 215, 0, 0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; transition: all 0.3s ease;">
+            <i class="fas fa-search fa-2x" style="color: #FFD700;"></i>
+          </div>
+          <h3 style="color: #FFD700;">SEO Optimization</h3>
+          <p class="text-light mb-0">Improve your search rankings and organic traffic.</p>
+          <div class="service-hover-content" style="position: absolute; bottom: -20px; left: 0; right: 0; opacity: 0; transition: all 0.3s ease;">
+            <a href="#" class="btn btn-sm mt-3" style="background-color: #FFD700; color: #000;">Learn More</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Service 5 -->
+      <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="300">
+        <div class="service-card h-100 p-4 text-center position-relative">
+          <div class="icon-wrapper mb-4" style="width: 80px; height: 80px; margin: 0 auto; background: rgba(255, 215, 0, 0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; transition: all 0.3s ease;">
+            <i class="fas fa-tachometer-alt fa-2x" style="color: #FFD700;"></i>
+          </div>
+          <h3 style="color: #FFD700;">Performance</h3>
+          <p class="text-light mb-0">Speed optimization for better user experience.</p>
+          <div class="service-hover-content" style="position: absolute; bottom: -20px; left: 0; right: 0; opacity: 0; transition: all 0.3s ease;">
+            <a href="#" class="btn btn-sm mt-3" style="background-color: #FFD700; color: #000;">Learn More</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Service 6 -->
+      <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="350">
+        <div class="service-card h-100 p-4 text-center position-relative">
+          <div class="icon-wrapper mb-4" style="width: 80px; height: 80px; margin: 0 auto; background: rgba(255, 215, 0, 0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; transition: all 0.3s ease;">
+            <i class="fas fa-shield-alt fa-2x" style="color: #FFD700;"></i>
+          </div>
+          <h3 style="color: #FFD700;">Security</h3>
+          <p class="text-light mb-0">Protection against threats and vulnerabilities.</p>
+          <div class="service-hover-content" style="position: absolute; bottom: -20px; left: 0; right: 0; opacity: 0; transition: all 0.3s ease;">
+            <a href="#" class="btn btn-sm mt-3" style="background-color: #FFD700; color: #000;">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Required Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 800,
+    easing: 'ease-in-out',
+    once: true
+  });
+</script>
+
+  <!-- Experience Section -->
+
+
+<!-- Experience Section -->
+<section id="experience" class="section" style="background-color: #000; color:  #dbc859;">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <h1 class="fw-bold exp-heading-hover">Experience</h1>
+      <p class="text-light">2+ years of experience building high-quality, responsive websites for startups and businesses.</p>
+    </div>
+
+    <div class="timeline">
+
+      <!-- Timeline Item 1 -->
+      <div class="timeline-item" data-aos="fade-up-right" data-aos-delay="100">
+        <div class="timeline-icon"><i class="bi bi-briefcase-fill"></i></div>
+        <div class="timeline-content">
+          <h5>Front-End Developer <span class="text-muted small">(2023 - Present)</span></h5>
+          <p>Working with React, Bootstrap, and animation libraries to build modern, responsive interfaces for client projects.</p>
+        </div>
+      </div>
+
+      <!-- Timeline Item 2 -->
+      <div class="timeline-item" data-aos="fade-up-left" data-aos-delay="200">
+        <div class="timeline-icon"><i class="bi bi-globe2"></i></div>
+        <div class="timeline-content">
+          <h5>Freelance Web Designer <span class="text-muted small">(2022 - 2023)</span></h5>
+          <p>Designed and developed custom websites for businesses including portfolios, e-commerce, and service landing pages.</p>
+        </div>
+      </div>
+
+      <!-- Timeline Item 3 -->
+      <div class="timeline-item" data-aos="fade-up-right" data-aos-delay="300">
+        <div class="timeline-icon"><i class="bi bi-award-fill"></i></div>
+        <div class="timeline-content">
+          <h5>Intern @ XYZ Tech <span class="text-muted small">(2021 - 2022)</span></h5>
+          <p>Assisted in building internal tools and UI components, collaborated with senior devs, and learned modern development stacks.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000, // animation duration
+    offset: 120, // offset (in px) from the original trigger point
+    once: true,  // whether animation should happen only once
+  });
+</script>
+
+
+  
+
+  <!-- Projects Section -->
+<section id="projects" class="section" style="background-color: #000; color: #dbc859;">
+    <div class="container">
+      <div class="text-center mb-5" data-aos="fade-up-left">
+        <h1 class="fw-bold proj-heading-hover">My Projects</h1>
+        <p class="text-light">Some of the projects I've worked on:</p>
+      </div>
+  
+      <div class="row g-4">
+  
+        <!-- Project 1: Portfolio Website -->
+        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
+          <div class="card bg-dark text-warning proj-card-hover">
+            <img src="img 4.webp" class="card-img-top" alt="Portfolio Website">
+            <div class="card-body text-center">
+              <h5 class="card-title">Portfolio Website</h5>
+              <p class="card-text">A creative personal website to showcase projects and skills.</p>
+              <a href="http://www.pepspeed.com/" class="btn btn-outline-warning">View Project</a>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Project 2: Business Landing Page -->
+        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+          <div class="card bg-dark text-warning proj-card-hover">
+            <img src="img12.webp" class="card-img-top" alt="Business Landing Page">
+            <div class="card-body text-center">
+              <h5 class="card-title">Business Landing Page</h5>
+              <p class="card-text">A professional landing page for a business to convert visitors into clients.</p>
+              <a href="http://www.strengthandmobilitylab.com/" class="btn btn-outline-warning">View Project</a>
+           
+            </div>
+          </div>
+        </div>
+  
+        <!-- Project 3: E-commerce UI -->
+        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="300">
+          <div class="card bg-dark text-warning proj-card-hover">
+            <img src="img 33.webp" class="card-img-top" alt="E-commerce UI">
+            <div class="card-body text-center">
+              <h5 class="card-title">E-commerce UI</h5>
+              <p class="card-text">A sleek and modern UI design for an online store with an intuitive shopping experience.</p>
+              <a href="http://www.possibletraining.com/" class="btn btn-outline-warning">View Project</a>
+         
+            </div>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+
+<!-- Blogs Section -->
+<!-- Blogs Section -->
+<section id="blogs" class="section" style="background-color: #111; color:  #dbc859;">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="flip-left">
+      <h1 class="fw-bold blogs-heading-hover">My Blogs</h1>
+      <p class="text-light">Explore my latest blogs where I share tips, tutorials, and insights on web development and building your own portfolio website.</p>
+    </div>
+
+    <!-- Blog Cards -->
+    <div class="row g-4">
+
+      <!-- Blog Card 1 -->
+      <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
+        <div class="card bg-dark text-warning blog-card-hover">
+          <div class="card-body text-center">
+            <img src="web-1738168_1280.jpg" alt="Portfolio Building" class="img-fluid mb-3">
+            <h5 class="card-title">Step-by-Step Guide to Building Your Portfolio</h5>
+            <p class="card-text">Learn how to design, code, and deploy your personal portfolio using HTML, CSS, JavaScript, and GitHub Pages. A complete beginner-friendly guide.</p>
+            <a href="#" class="btn btn-outline-warning">Read More</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Blog Card 2 -->
+      <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+        <div class="card bg-dark text-warning blog-card-hover">
+          <div class="card-body text-center">
+            <img src="website-8305450_1280.jpg" alt="Web Development Skills" class="img-fluid mb-3">
+            <h5 class="card-title">Essential Skills for Web Developers in 2025</h5>
+            <p class="card-text">From mastering JavaScript frameworks to version control with Git — here's what every modern web developer should know to stay ahead of the curve.</p>
+            <a href="#" class="btn btn-outline-warning">Read More</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Blog Card 3 -->
+      <div class="col-md-4" data-aos="zoom-in" data-aos-delay="300">
+        <div class="card bg-dark text-warning blog-card-hover">
+          <div class="card-body text-center">
+            <img src="mobile-phone-4009351_1280.jpg" alt="CSS Flexbox vs Grid" class="img-fluid mb-3">
+            <h5 class="card-title">CSS Grid vs Flexbox: When to Use What?</h5>
+            <p class="card-text">Confused between Grid and Flexbox? This guide breaks down the differences and use-cases with real examples for both layout systems in CSS.</p>
+            <a href="#" class="btn btn-outline-warning">Read More</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+   
+
+    <section class="clients-section" id="Clients Reviews">
+        <div class="container" >
+            <h1 class="section-heading text-center" data-aos="fade-down" > Clients Reviews </h1>
+            
+            <div class="row">
+                <!-- Client 1 -->
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="client-card text-center">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Client" class="client-img">
+                        <h3 class="client-name">John Smith</h3>
+                        <p class="client-comment">"Their web development team transformed our online presence completely. The e-commerce site they built increased our sales by 200%!"</p>
+                    </div>
+                </div>
+                
+                <!-- Client 2 -->
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="client-card text-center">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Client" class="client-img">
+                        <h3 class="client-name">Sarah Johnson</h3>
+                        <p class="client-comment">"Incredible attention to detail. The web application they developed streamlined our operations and saved us countless hours."</p>
+                    </div>
+                </div>
+                
+                <!-- Client 3 -->
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="client-card text-center">
+                        <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Client" class="client-img">
+                        <h3 class="client-name">Michael Chen</h3>
+                        <p class="client-comment">"The responsive design works perfectly across all devices. Our mobile traffic and conversions have never been higher."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animation JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+    </script>
+
+
+
+
+
+
+
+  <!-- Footer -->
+<footer style="background-color: #111; color: #FFD700; padding: 40px 0;"><br><br>
+    <div class="container">
+      <div class="row">
+        <!-- Contact Form in Footer -->
+        <div class="col-md-6">
+          <h2 class="fw-bold">Contact Us</h2>
+          <form>
+            <div class="mb-3">
+              <label for="footer-name" class="form-label">Your Name</label>
+              <input type="text" class="form-control" id="footer-name" placeholder="Your Name" required>
+            </div>
+            <div class="mb-3">
+              <label for="footer-email" class="form-label">Email Address</label>
+              <input type="email" class="form-control" id="footer-email" placeholder="Your Email" required>
+            </div>
+            <div class="mb-3">
+              <label for="footer-message" class="form-label">Message</label>
+              <textarea class="form-control" id="footer-message" rows="3" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-warning w-100">Send Message</button>
+          </form>
+        </div>
+ 
+        <!-- Contact Information -->
+        <div class="col-md-6">
+          <br>
+          <br>
+          <h3 class="fw-bold">Contact Infomation </h3>
+          <p><i class="bi bi-geo-alt-fill"></i> Location: Okara Pakistan </p>
+          <p><i class="bi bi-envelope-fill"></i> Email: <a href="areeshy1212@gmail.com" class="text-warning">areeshy1212@gmail.com</a></p>
+          <p><i class="bi bi-telephone-fill"></i> Phone: <a href="tel:+92 3017309193" class="text-warning">+92 3017309193 </a></p>
+
+
+
+          <div class="container text-center my-4">
+            <h3 class="mb-3">Follow Me</h3>
+            <div class="d-flex justify-content-center gap-3 social-icons">
+              <a href="https://facebook.com" class="icon" target="_blank"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://instagram.com" class="icon" target="_blank"><i class="fab fa-instagram"></i></a>
+              <a href="https://linkedin.com" class="icon" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+              <a href="https://wa.me/1234567890" class="icon" target="_blank"><i class="fab fa-whatsapp"></i></a>
+              <a href="https://github.com" class="icon" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          
+          
+          
+          
+
+
+
+
+
+
+        </div>
+      </div>
+  
+      <div class="text-center mt-4">
+        <p>&copy; 2023 Areesha Nazar. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- JS Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
